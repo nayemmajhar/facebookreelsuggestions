@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Facebook reels and Suggestions",
+    "version": "0.0.1",
+    "icons": {
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.facebook.com/*"],
+          "js": ["content-script.js"]
+        }
+    ]
+}
